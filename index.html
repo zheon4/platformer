@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Platformer</title>
-</head>
+<html>
 <body>
-  <canvas id="gameCanvas" width="800" height="600"></canvas>
 
-  <!-- Load your game script after the canvas is created -->
-  <script type="module" src="js/main.js"></script>
+  <canvas id="myCanvas" width="300" height="150" style="border: 4px dashed black;"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#123abc";
+    ctx.fillRect(20, 20, 150, 100);
+  </script>
+
 </body>
 </html>
+
